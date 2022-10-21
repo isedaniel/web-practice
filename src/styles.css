@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #23252C;
+}
+
+.app-div {
+  max-width: 317px;
+  background-color: #23252C;
+  border: red 2px solid;
+  margin-top: 44px;
+}
+
+.image-div > img {
+  max-width: 317px;
+  height: auto;
+}
