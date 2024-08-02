@@ -9,15 +9,26 @@
 
   h1 {
     color: #09f;
-    border: 3px solid currentColor;
   }
 
   h1:hover {
-    color: #ccc;
+    outline: 2px solid #09f;
+  }
+
+  h1:active {
+    outline: 2px solid cyan;
   }
 
   .content {
     color: dodgerblue;
+  }
+
+  input:hover {
+    outline: 1px solid #09f;
+  }
+
+  input:focus {
+    outline: 0px solid black;
   }
 </style>
 
@@ -29,5 +40,6 @@
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio placeat sit, quam quibusdam labore
       laudantium obcaecati ex ipsum consequatur ut ullam sint doloremque vero, aspernatur, non repudiandae. Magnam,
       facere id!</p>
+      <input type="text">
   </div>
 </body>
