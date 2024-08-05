@@ -7,39 +7,21 @@
     font-family: 'Courier New', Courier, monospace;
   }
 
-  h1 {
+  .content {
+    font-size: 24px;
+  }
+
+  p strong {
     color: #09f;
   }
 
-  h1:hover {
-    outline: 2px solid #09f;
-  }
-
-  h1:active {
-    outline: 2px solid cyan;
-  }
-
-  .content {
-    color: dodgerblue;
-  }
-
-  input:hover {
-    outline: 1px solid #09f;
-  }
-
-  input:focus {
-    outline: 0px solid black;
-  }
 </style>
 
 <body>
-  <h1>This is a h1 component.</h1>
-  <h2>An h2 component.</h2>
-  <h3>And an h3.</h3>
+  <strong>Un strong pero afuera del paragraph.</strong>
   <div class="content">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio placeat sit, quam quibusdam labore
+    <p>Lorem ipsum dolor <strong>sit amet consectetur</strong>, adipisicing elit. Distinctio placeat sit, quam quibusdam labore
       laudantium obcaecati ex ipsum consequatur ut ullam sint doloremque vero, aspernatur, non repudiandae. Magnam,
       facere id!</p>
-      <input type="text">
   </div>
 </body>
