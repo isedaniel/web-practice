@@ -7,14 +7,25 @@
 
   section {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 5px solid #000;
+    width: 700px;
   }
 
   .container {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 5px;
+    border: 2px solid #000;
+    margin: 2px;
+    box-sizing: border-box;
     background: #CD2E3A;
+    flex: 1;
+  }
+
+  .container:first-child {
+    flex: 2;
   }
 </style>
 
@@ -29,6 +40,17 @@
     <div class="container">
       This is a container.
     </div>
+    <div class="container">
+      This is a container.
+    </div>
+    <div class="container">
+      This is a container.
+    </div>
+    <div class="container">
+      This is a container.
+    </div>
+  </section>
+  <section class="parent">
     <div class="container">
       This is a container.
     </div>
