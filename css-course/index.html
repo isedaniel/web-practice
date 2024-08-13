@@ -5,12 +5,17 @@
     background: #75aadb;
   }
 
-  section {
+  .parent {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 10px;
     flex-wrap: wrap;
-    border: 5px solid #000;
-    width: 700px;
+    align-items: center;
+    border: 2px solid black;
+    width: 250px;
+    box-sizing: border-box;
+    height: 400px;
   }
 
   .container {
@@ -18,15 +23,25 @@
     height: 100px;
     border-radius: 5px;
     border: 2px solid #000;
-    margin: 2px;
     box-sizing: border-box;
-    background: #CD2E3A;
-    flex: 1;
   }
 
   .container:first-child {
-    flex: 2;
+    background:#CD2E3A;
   }
+
+  .container:nth-child(2) {
+    background: dodgerblue;
+  }
+
+  .container:nth-child(3) {
+    background: #0047A0;
+  }
+
+  .container:last-child {
+    background: yellow;
+  }
+
 </style>
 
 <body>
@@ -43,22 +58,6 @@
     <div class="container">
       This is a container.
     </div>
-    <div class="container">
-      This is a container.
-    </div>
-    <div class="container">
-      This is a container.
-    </div>
   </section>
-  <section class="parent">
-    <div class="container">
-      This is a container.
-    </div>
-    <div class="container">
-      This is a container.
-    </div>
-    <div class="container">
-      This is a container.
-    </div>
-  </section>
+
 </body>
