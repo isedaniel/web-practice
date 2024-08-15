@@ -1,34 +1,37 @@
 <title>css grid</title>
 
 <style>
+  body {
+    background: #76aadb;
+  }
+
   .container {
-    background: #75aadb;
-    border: 2px solid black;
-    border-radius: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
   }
 
-  .container div {
-    background: #cd2e3a;
-    border: 2px solid red;
-    border-radius: 5px;
-  }
-
-  body {
-    background: #ccc;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
   }
 </style>
 
 <body>
-  <section class="container">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-  </section>
+  <div class="container">
+    <img src="/image.jpg" />
+    <img src="/image.jpg" />
+    <img src="/image.jpg" />
+    <img src="/image.jpg" />
+    <img src="/image.jpg" />
+    <img src="/image.jpg" />
+    <img src="/image.jpg" />
+    <img src="/image.jpg" />
+    <img src="/image.jpg" />
+    <img src="/image.jpg" />
+    <img src="/image.jpg" />
+    <img src="/image.jpg" />
+    <img src="/image.jpg" />
+  </div>
 </body>
