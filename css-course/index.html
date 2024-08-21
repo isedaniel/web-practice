@@ -12,14 +12,15 @@
       display: grid;
       gap: 5px;
       padding: 5px;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-auto-rows: 50px;
     }
 
     .container div {
       background: #ddd;
       border: 2px solid black;
       border-radius: 5px;
-      height: 50px;
+      padding: 5%;
     }
 
     body {
@@ -27,20 +28,39 @@
       margin: 0;
       padding: 10px;
     }
+
+    #buttonEqual {
+      grid-row-end: span 2;
+    }
+
+    #buttonPlus {
+      grid-row-end: span 2;
+    }
+
+    #button0 {
+      grid-column-end: span 2;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-   <div>1</div>
-   <div>2</div>
-   <div>3</div>
-   <div>4</div>
-   <div>5</div>
-   <div>6</div>
-   <div>7</div>
-   <div>8</div>
-   <div>9</div>
-   <div>10</div>
+   <div id="buttonC">C</div>
+   <div id="buttonDiv">/</div>
+   <div id="buttonTimes">*</div>
+   <div id="buttonMinus">-</div>
+   <div id="button7">7</div>
+   <div id="button8">8</div>
+   <div id="button9">9</div>
+   <div id="buttonPlus">+</div>
+   <div id="button4">4</div>
+   <div id="button5">5</div>
+   <div id="button6">6</div>
+   <div id="button1">1</div>
+   <div id="button2">2</div>
+   <div id="button3">3</div>
+   <div id="buttonEqual">=</div>
+   <div id="button0">0</div>
+   <div id="buttonDot">.</div>
   </div>
 </body>
 </html>
