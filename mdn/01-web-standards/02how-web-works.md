@@ -103,6 +103,21 @@ Contains copy of most used **component files**, to lower **latency**.
 
 ### Part 3: HTTP and REST
 
+**HTTP protocol.** Common language for the **request-response** cycle. Defines 
+the **syntax** (data format and encoding), **semantics** (meaning associated 
+with the **syntax**) and **timing** (speed and sequencing). **Text-based**, 
+contains two parts: **header** and **body**. An **abstraction layer** for
+**communication**, not **transmission** (relies on **TCP/IP protocol**).
 
+**HTTPS.** **HTTP** over **TLS/SSL**. The client specifies **TLS/SSL** using
+port 443. When **Client** and **server** *agree*, they do a **TLS handshake**: 
+they establish *secret session* **keys** to **encrypt/decrypt** messages.
+
+**SSL.** A security protocol, prevent eavesdropping and tampering while the 
+message travels.
+
+**HTTP Request Header.** Contains **metadata**, including: **request type**: 
+(**GET**, **POST**, **PUT**, **DELETE**), **path**(**URL**), **status code**, 
+**content-type**, **user-agent**, **cookie**, **post body**.
 
 ### Part 4: Code examples of client-server interactions
