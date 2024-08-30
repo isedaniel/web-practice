@@ -117,7 +117,28 @@ they establish *secret session* **keys** to **encrypt/decrypt** messages.
 message travels.
 
 **HTTP Request Header.** Contains **metadata**, including: **request type**: 
-(**GET**, **POST**, **PUT**, **DELETE**), **path**(**URL**), **status code**, 
+(**GET**/**POST**/**PUT**/**DELETE**), **path**(**URL**), **status code**, 
 **content-type**, **user-agent**, **cookie**, **post body**.
+
+**Cookie.** File with **name-value pairs**. Used for rendering content based on 
+the user. If you have one stored, the **client** *sends* it to the **server**.
+If you don't, the **server** *creates one* and sends it back.
+
+**HTTP Body.** Depends on the **request**. E. g. if you send a **GET method**,
+the **server** will send back an **HTML page**.
+
+**HTTP method.** Tells the server what to do with the **resource** identified by
+the **URL**. 
+**GET**: Most common, used for read information for a given URL.
+Read-only request. Should not modify data on the server. 
+Returns 200 (OK) **status code** if resource was found, 404 (NOT FOUND).
+E. g.: example.com/users return all the users. 
+**POST**: 
+example.com/users/unique-id creates a new user. **PUT** 
+example.com/users/unique-id updates a comment. **DELETE** 
+example.com/users/unique-id deletes a comment.
+There are others but these are the most important.
+
+
 
 ### Part 4: Code examples of client-server interactions
