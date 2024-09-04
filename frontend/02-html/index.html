@@ -1,42 +1,144 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Page Title</title>
-        <style>
-            body {
-                font-family: 'Courier New', Courier, monospace;
-            }
+<html lang="en">
 
-            .blue {
-                color: #76aadb;
-            }
+<head>
+    <title>Page Title</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #181a1b;
+            color: #eee;
+            margin: 0px;
+        }
 
-            .red {
-                color: #cd2e3a;
-            }
-        </style>
-    </head>
-    <body>
-        <h2>What is HTML?</h2>
-        <p>Hyper Text Markup Language.</p>
+        .content {
+            margin: auto;
+            width: 80%;
+            max-width: 900px;
+        }
+
+        .blue {
+            color: #76aadb;
+        }
+
+        .codebox {
+            background-color: #222425;
+            color: #76aadb;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 5px;
+            display: block;
+            max-width: 700px;
+        }
+
+        .code {
+            background-color: #222425;
+            color: #cd2e3a;
+            border-radius: 3px;
+            padding: 4px;
+        }
+
+        a {
+            color: dodgerblue;
+        }
+
+        ul {
+            list-style-type: "- ";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>
+            W3Schools HTML Course
+        </h1>
+
+        <h2>
+            What is HTML?
+        </h2>
+
+        <p>
+            Hyper Text Markup Language.
+        </p>
+
         <ul>
             <li>Describes the <b>structure</b> of a Web Page.</li>
             <li>Consist in a series of <b>elements</b>.</li>
             <li>Each element is marked with a <b>tag</b>.</li>
         </ul>
-        <h2>What is an HTML element?</h2>
-        <p>Defined by a start tag, content and end tag:</p>
+
+        <h2>
+            HTML Elements
+        </h2>
         <p>
-            <span class="blue">&#139;</span><span class="red">tagname</span><span class="blue">&#155;</span>
-            Content.
-            <span class="blue">&#139;</span><span class="red">/tagname</span><span class="blue">&#155;</span>
+            Defined by a start tag, content and end tag:
+        </p>
+        <p>
+            <span class="codebox">
+                &#139;tagname&#155;
+                Content.
+                &#139;/tagname&#155;
+            </span>
         </p>
 
-        <h2>Some elements.</h2>
-        
-        <h3>HTML Links.</h3>
-        <p>&#139;a href="https://www.w3schools.com"&#155;Link.&#139;/a&#155;</p>
-        <p><a href="https://www.w3schools.com">Link.</a></p>
+        <h3>
+            HTML Links
+        </h3>
+        <p>
+            <span class="codebox">
+                &#139;a href="https://www.w3schools.com"&#155;
+                Link.
+                &#139;/a&#155;
+            </span>
+        </p>
+        <p>
+            <a href="https://www.w3schools.com">Link.</a>
+        </p>
 
-    </body>
+        <h3>
+            HTML Images
+        </h3>
+        <p>
+            <span class="codebox">
+                &#139;img src="https://www.w3schools.com/apple-touch-icon.png"&#155;
+            </span>
+        </p>
+        <img src="https://www.w3schools.com/apple-touch-icon.png" alt="W3Schools.com">
+
+        <h2>
+            HTML Attributes
+        </h2>
+        <ul>
+            <li>HTML elements can have <b>attributes</b>.</li>
+            <li>always especified in the <b>start tag</b>.</li>
+            <li>usually <b>name="value"</b> pair.</li>
+        </ul>
+
+        <h3>
+            src
+        </h3>
+        <p>
+            Specifies the image path for an <span class="code">&#139;img&#155;</span> tag.
+        </p>
+        <p>
+            <span class="codebox">
+                &#139;img src="https://www.w3schools.com/apple-touch-icon.png"&#155;
+            </span>
+        </p>
+
+        <h3>
+            lang
+        </h3>
+        <p>
+            Always include the language in the <span class="code">&#139;html&#155;</span> tag.
+        </p>
+        <p>
+            <span class="codebox">
+                &#139;html lang="es-AR"&#155;
+            </span>
+        </p>
+    </div>
+</body>
+
 </html>
