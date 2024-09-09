@@ -3,6 +3,7 @@
 
 <head>
     <title>W3Schools HTML Course</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
@@ -48,6 +49,39 @@
             padding: 2em;
             width: 80%;
             max-width: 900px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #292c2e;
+        }
+
+        tr:hover {
+            background-color: #373b3d;
+        }
+
+        .flexcontainer {
+            display: flex;
+        }
+
+        .flexcontainer>div {
+            width: 33%;
+            padding-left: 10px;
+            border-radius: 10px;
+        }
+
+        .gridcontainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 5px;
+        }
+
+        .gridcontainer>div {
+            border-radius: 10px;
+            padding-left: 10px;
         }
     </style>
 </head>
@@ -199,14 +233,118 @@
         <h5>Heading 5</h5>
         <h6>Heading 6</h6>
 
-        <h2>The &lt;pre&gt; element</h2>
+        <h2>The &lt;address&gt; element</h2>
 
-        
+        <address>
+            Written by John Doe.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
 
+        <h2>HTML &lt;bdo&gt; for Bi-Directional Override</h2>
+
+        <p class="codebox">
+            &lt;bdo dir="rtl"&gt;This text will be written from right to left&lt;/bdo&gt;
+        </p>
+        <p>
+            <bdo dir="rtl">This text will be written from right to left</bdo>
+        </p>
+
+        <h2>HTML Tables</h2>
+
+        <table>
+            <tr>
+                <th>Number</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Danilo</td>
+                <td>That's Danilo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Danilo</td>
+                <td>I think that's Danilo</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Danilo</td>
+                <td>Also Danilo</td>
+            </tr>
+        </table>
+
+        <h2>Flex container</h2>
+
+        <div class="flexcontainer">
+            <div style="background-color: #cd2e3a;">
+                <h3>Primer Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime perferendis, libero id qui modi
+                    explicabo, culpa recusandae illum asperiores quaerat maiores nulla facilis quibusdam accusamus
+                    nesciunt voluptate reiciendis quos. Commodi.</p>
+            </div>
+            <div>
+                <h3>Segundo Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime perferendis, libero id qui modi
+                    explicabo, culpa recusandae illum asperiores quaerat maiores nulla facilis quibusdam accusamus
+                    nesciunt voluptate reiciendis quos. Commodi.</p>
+            </div>
+            <div style="background-color: #76aadb;">
+                <h3>Tercer Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime perferendis, libero id qui modi
+                    explicabo, culpa recusandae illum asperiores quaerat maiores nulla facilis quibusdam accusamus
+                    nesciunt voluptate reiciendis quos. Commodi.</p>
+            </div>
+        </div>
+
+        <h2>Grid container</h2>
+
+        <div class="gridcontainer">
+            <div style="background-color: #cd2e3a;">
+                <h3>Primer Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime perferendis, libero id qui modi
+                    explicabo, culpa recusandae illum asperiores quaerat maiores nulla facilis quibusdam accusamus
+                    nesciunt voluptate reiciendis quos. Commodi.</p>
+            </div>
+            <div>
+                <h3>Segundo Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime perferendis, libero id qui modi
+                    explicabo, culpa recusandae illum asperiores quaerat maiores nulla facilis quibusdam accusamus
+                    nesciunt voluptate reiciendis quos. Commodi.</p>
+            </div>
+            <div style="background-color: #76aadb;">
+                <h3>Tercer Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime perferendis, libero id qui modi
+                    explicabo, culpa recusandae illum asperiores quaerat maiores nulla facilis quibusdam accusamus
+                    nesciunt voluptate reiciendis quos. Commodi.</p>
+            </div>
+            <div style="background-color: #cd2e3a;">
+                <h3>Cuarto Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime perferendis, libero id qui modi
+                    explicabo, culpa recusandae illum asperiores quaerat maiores nulla facilis quibusdam accusamus
+                    nesciunt voluptate reiciendis quos. Commodi.</p>
+            </div>
+            <div>
+                <h3>Quinto Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime perferendis, libero id qui modi
+                    explicabo, culpa recusandae illum asperiores quaerat maiores nulla facilis quibusdam accusamus
+                    nesciunt voluptate reiciendis quos. Commodi.</p>
+            </div>
+            <div style="background-color: #76aadb;">
+                <h3>Sexto Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime perferendis, libero id qui modi
+                    explicabo, culpa recusandae illum asperiores quaerat maiores nulla facilis quibusdam accusamus
+                    nesciunt voluptate reiciendis quos. Commodi.</p>
+            </div>
+        </div>
     </div>
     <footer>
         <hr>
         <a href="https://github.com/isedaniel">github.com/isedaniel</a> - Danilo 2024.
+        <address>Santiago del Estero, Argentina.</address>
     </footer>
 </body>
 
