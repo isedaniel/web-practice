@@ -11,17 +11,23 @@
 
 <body>
     <div class="content">
-        <h1>HTML Course second page.</h1>
+        <nav class="mainNav">
+            <h1>W3Schools HTML Course</h1>
+            <ul>
+                <li><a class="button" href="/index.html">Home</a></li>
+                <li><a class="button" href="/second.htm">Second page</a></li>
+                <li><a class="button" href="/layouts.htm">CSS Layouts</a></li>
+            </ul>
+        </nav>
+        <h2>HTML Course second page.</h2>
 
         <p>For more practice.</p>
-
-        <a href="./index.html" class="button">Back to index.</a>
 
         <h2>Javascript</h2>
 
         Button with Javascript.
 
-        <button class="button" onclick="document.getElementById('display').innerHTML = Date()">Display time</button>
+        <div class="button" id="getDate">Get Date()</div>
 
         <p id="display"></p>
 
@@ -39,6 +45,10 @@
 </body>
 <script>
     const $ = (id) => document.getElementById(id);
+
+    $('getDate').addEventListener('click', () => {
+        $('display').innerHTML = Date();
+    });
 
     $('helloJavascript').addEventListener('click', () => {
         $('display2').innerHTML = 'Hello Javascript!';
@@ -62,7 +72,8 @@
 
         randomColorButton.style.backgroundColor = newColor;
         randomColorButton.style.color = textColor;
-        colorCodeDisplay.innerHTML = `color: ${newColor}; brightness: ${brightness}; textColor: ${textColor}`;
+        colorCodeDisplay.innerHTML = `color: ${newColor};`;
     });
 </script>
+
 </html>
