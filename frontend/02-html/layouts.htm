@@ -2,281 +2,290 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>CSS Layouts</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <title>CSS Layouts</title>
 </head>
 
 <body>
-    <div class="content">
-        <nav class="mainNav">
-            <h1>W3Schools HTML Course</h1>
-            <ul>
-                <li><a class="button" href="/index.html">Home</a></li>
-                <li><a class="button" href="/second.htm">Second page</a></li>
-                <li><a class="button" href="/layouts.htm">CSS Layouts</a></li>
-            </ul>
-        </nav>
+  <div class="content">
 
-        <h1>CSS Layouts</h1>
+    <nav>
+      <h1>W3Schools HTML Course</h1>
+      <ul>
+        <li><a class="button" href="/">Home</a></li>
+        <li><a class="button" href="/second.htm">Second page</a></li>
+        <li><a class="button" href="/layouts.htm">CSS Layouts</a></li>
+        <li><a class="button" href="/forms.html">Forms</a></li>
+      </ul>
+    </nav>
+    
+    <h1>CSS Layouts</h1>
 
-        <h2>CSS Float Layout</h2>
-        <div class="float">
-            <header>This is the header</header>
-            <section>
-                <aside>
-                    <ul>
-                        <li><a href="#FloatSantiago">Santiago del Estero</a></li>
-                        <li><a href="#FloatSeul">Seúl</a></li>
-                        <li><a href="#FloatBuenosAires">Buenos Aires</a></li>
-                    </ul>
-                </aside>
-                <article>
-                    <h2 id="FloatSantiago">Santiago del Estero</h2>
-                    <p>Santiago del Estero es una ciudad argentina, capital de la provincia de Santiago del Estero y
-                        cabecera
-                        del departamento Juan Francisco Borges. Es la más antigua de las ciudades existentes del país.
-                        Se
-                        encuentra ubicada a orillas del río Dulce, y se extiende en una superficie de aproximadamente
-                        4002
-                        hectáreas, oficialmente dividida en 62 barrios. Según el Censo Nacional de 2010, contaba con una
-                        población de 252 192 habitantes. Junto a la ciudad de La Banda y la localidad de El Zanjón,
-                        forma el
-                        aglomerado urbano llamado Santiago del Estero-La Banda, el centro urbano más poblado de la
-                        provincia
-                        y
-                        duodécimo en el país, con 360 923 habs.</p>
+    <h2>CSS Float Layout</h2>
+    <div class="float">
+      <header>This is the header</header>
 
-                    <h2 id="FloatSeul">Seúl</h2>
-                    <p>Oficialmente Ciudad Especial de Seúl (서울특별시), es la capital de Corea del Sur desde la creación de
-                        esta república en 1948, la capital histórica de Corea desde hace más
-                        de 600 años y la ciudad más poblada de la península de Corea.</p>
-                    <p>Situada en el noroeste del país, a unos 50 kilómetros de la zona desmilitarizada que separa las
-                        dos
-                        Coreas, forma una unidad administrativa propia dentro del Estado. Está atravesada por el río
-                        Han.
-                    </p>
-                    <p>Hoy en día, Seúl es considerada una ciudad global, resultado de una explosión de crecimiento
-                        económico
-                        conocido como el Milagro del río Han, que recuperó a una ciudad destruida por la guerra de
-                        Corea. Es
-                        la
-                        cuarta economía metropolitana del mundo; con un PIB de 773.900 millones de dólares
-                        estadounidenses,
-                        solo
-                        por detrás de Tokio, Nueva York y Los Ángeles.</p>
-                    <p>Con unos 10 millones de habitantes en la ciudad propiamente dicha, y 24,5 millones en toda el
-                        área
-                        metropolitana, que incluye el puerto de Incheon y la provincia de Gyeonggi, se trata de la
-                        cuarta
-                        área
-                        metropolitana más grande del mundo.</p>
+      <section>
 
-                    <h2 id="FloatBuenosAires">Buenos Aires</h2>
-                    <p>es la capital y ciudad más poblada de la República Argentina. Sus nombres oficiales son Ciudad de
-                        Buenos
-                        Aires o Ciudad Autónoma de Buenos Aires (CABA). También es llamada Capital Federal, por ser la
-                        sede
-                        del Gobierno nacional. Es uno de los 24 distritos, o «jurisdicciones de primer orden»,10que
-                        conforman el país. Desde 1996 es una ciudad autónoma, por lo que tiene sus propios poderes
-                        ejecutivo,
-                        legislativo y judicial. Está situada en la región centro-este del país, sobre la orilla sur del
-                        Río
-                        de
-                        la Plata, en la región pampeana. La ciudad de Buenos Aires fue cedida en 1880 por la provincia
-                        de
-                        Buenos
-                        Aires para que fuera la capital federal del país; a partir de 2020 es considerada «capital
-                        principal»,
-                        junto a 24 capitales alternas. En virtud de la reforma constitucional de 1994, goza de un
-                        régimen de
-                        autonomía.</p>
-                    <p>La población de la ciudad, según el Censo de 2022, es de 3 120 612 habitantes.1Integra un
-                        aglomerado
-                        urbano mayor denominado Área Metropolitana de Buenos Aires (AMBA) junto a cuarenta
-                        partidos-municipios
-                        de la lindera provincia de Buenos Aires, que en total suma una población de 13 395 796
-                        habitantes.
-                    </p>
-                </article>
-            </section>
-            <footer>This is the footer.</footer>
-        </div>
+        <aside>
+          <ul>
+            <li><a href="#FloatSantiago">Santiago del Estero</a></li>
+            <li><a href="#FloatSeul">Seúl</a></li>
+            <li><a href="#FloatBuenosAires">Buenos Aires</a></li>
+          </ul>
+        </aside>
 
-        <h2>CSS Flex Layout</h2>
-        <div class="flex">
-            <header>This is the header</header>
-            <section>
-                <aside>
-                    <ul>
-                        <li><a href="#FlexSantiago">Santiago del Estero</a></li>
-                        <li><a href="#FlexSeul">Seúl</a></li>
-                        <li><a href="#FlexBuenosAires">Buenos Aires</a></li>
-                    </ul>
-                </aside>
-                <article>
-                    <h2 id="FlexSantiago">Santiago del Estero</h2>
-                    <p>Santiago del Estero es una ciudad argentina, capital de la provincia de Santiago del Estero y
-                        cabecera
-                        del departamento Juan Francisco Borges. Es la más antigua de las ciudades existentes del país.
-                        Se
-                        encuentra ubicada a orillas del río Dulce, y se extiende en una superficie de aproximadamente
-                        4002
-                        hectáreas, oficialmente dividida en 62 barrios. Según el Censo Nacional de 2010, contaba con una
-                        población de 252 192 habitantes. Junto a la ciudad de La Banda y la localidad de El Zanjón,
-                        forma el
-                        aglomerado urbano llamado Santiago del Estero-La Banda, el centro urbano más poblado de la
-                        provincia
-                        y
-                        duodécimo en el país, con 360 923 habs.</p>
+        <article>
+          <h2 id="FloatSantiago">Santiago del Estero</h2>
+          <p>Santiago del Estero es una ciudad argentina, capital de la
+            provincia de Santiago del Estero y cabecera
+            del departamento Juan Francisco Borges. Es la más antigua de las ciudades existentes del país.
+            Se
+            encuentra ubicada a orillas del río Dulce, y se extiende en una superficie de aproximadamente
+            4002
+            hectáreas, oficialmente dividida en 62 barrios. Según el Censo Nacional de 2010, contaba con una
+            población de 252 192 habitantes. Junto a la ciudad de La Banda y la localidad de El Zanjón,
+            forma el
+            aglomerado urbano llamado Santiago del Estero-La Banda, el centro urbano más poblado de la
+            provincia
+            y
+            duodécimo en el país, con 360 923 habs.</p>
 
-                    <h2 id="FlexSeul">Seúl</h2>
-                    <p>Oficialmente Ciudad Especial de Seúl (서울특별시), es la capital de Corea del Sur desde la creación de
-                        esta república en 1948, la capital histórica de Corea desde hace más
-                        de 600 años y la ciudad más poblada de la península de Corea.</p>
-                    <p>Situada en el noroeste del país, a unos 50 kilómetros de la zona desmilitarizada que separa las
-                        dos
-                        Coreas, forma una unidad administrativa propia dentro del Estado. Está atravesada por el río
-                        Han.
-                    </p>
-                    <p>Hoy en día, Seúl es considerada una ciudad global, resultado de una explosión de crecimiento
-                        económico
-                        conocido como el Milagro del río Han, que recuperó a una ciudad destruida por la guerra de
-                        Corea. Es
-                        la
-                        cuarta economía metropolitana del mundo; con un PIB de 773.900 millones de dólares
-                        estadounidenses,
-                        solo
-                        por detrás de Tokio, Nueva York y Los Ángeles.</p>
-                    <p>Con unos 10 millones de habitantes en la ciudad propiamente dicha, y 24,5 millones en toda el
-                        área
-                        metropolitana, que incluye el puerto de Incheon y la provincia de Gyeonggi, se trata de la
-                        cuarta
-                        área
-                        metropolitana más grande del mundo.</p>
+          <h2 id="FloatSeul">Seúl</h2>
+          <p>Oficialmente Ciudad Especial de Seúl (서울특별시), es la capital de Corea del Sur desde la creación de
+            esta república en 1948, la capital histórica de Corea desde hace más
+            de 600 años y la ciudad más poblada de la península de Corea.</p>
+          <p>Situada en el noroeste del país, a unos 50 kilómetros de la zona desmilitarizada que separa las
+            dos
+            Coreas, forma una unidad administrativa propia dentro del Estado. Está atravesada por el río
+            Han.
+          </p>
+          <p>Hoy en día, Seúl es considerada una ciudad global, resultado de una explosión de crecimiento
+            económico
+            conocido como el Milagro del río Han, que recuperó a una ciudad destruida por la guerra de
+            Corea. Es
+            la
+            cuarta economía metropolitana del mundo; con un PIB de 773.900 millones de dólares
+            estadounidenses,
+            solo
+            por detrás de Tokio, Nueva York y Los Ángeles.</p>
+          <p>Con unos 10 millones de habitantes en la ciudad propiamente dicha, y 24,5 millones en toda el
+            área
+            metropolitana, que incluye el puerto de Incheon y la provincia de Gyeonggi, se trata de la
+            cuarta
+            área
+            metropolitana más grande del mundo.</p>
 
-                    <h2 id="FlexBuenosAires">Buenos Aires</h2>
-                    <p>es la capital y ciudad más poblada de la República Argentina. Sus nombres oficiales son Ciudad de
-                        Buenos
-                        Aires o Ciudad Autónoma de Buenos Aires (CABA). También es llamada Capital Federal, por ser la
-                        sede
-                        del Gobierno nacional. Es uno de los 24 distritos, o «jurisdicciones de primer orden»,10que
-                        conforman el país. Desde 1996 es una ciudad autónoma, por lo que tiene sus propios poderes
-                        ejecutivo,
-                        legislativo y judicial. Está situada en la región centro-este del país, sobre la orilla sur del
-                        Río
-                        de
-                        la Plata, en la región pampeana. La ciudad de Buenos Aires fue cedida en 1880 por la provincia
-                        de
-                        Buenos
-                        Aires para que fuera la capital federal del país; a partir de 2020 es considerada «capital
-                        principal»,
-                        junto a 24 capitales alternas. En virtud de la reforma constitucional de 1994, goza de un
-                        régimen de
-                        autonomía.</p>
-                    <p>La población de la ciudad, según el Censo de 2022, es de 3 120 612 habitantes.1Integra un
-                        aglomerado
-                        urbano mayor denominado Área Metropolitana de Buenos Aires (AMBA) junto a cuarenta
-                        partidos-municipios
-                        de la lindera provincia de Buenos Aires, que en total suma una población de 13 395 796
-                        habitantes.
-                    </p>
-                </article>
-            </section>
-            <footer>This is the footer.</footer>
-        </div>
+          <h2 id="FloatBuenosAires">Buenos Aires</h2>
+          <p>es la capital y ciudad más poblada de la República Argentina. Sus nombres oficiales son Ciudad de
+            Buenos
+            Aires o Ciudad Autónoma de Buenos Aires (CABA). También es llamada Capital Federal, por ser la
+            sede
+            del Gobierno nacional. Es uno de los 24 distritos, o «jurisdicciones de primer orden»,10que
+            conforman el país. Desde 1996 es una ciudad autónoma, por lo que tiene sus propios poderes
+            ejecutivo,
+            legislativo y judicial. Está situada en la región centro-este del país, sobre la orilla sur del
+            Río
+            de
+            la Plata, en la región pampeana. La ciudad de Buenos Aires fue cedida en 1880 por la provincia
+            de
+            Buenos
+            Aires para que fuera la capital federal del país; a partir de 2020 es considerada «capital
+            principal»,
+            junto a 24 capitales alternas. En virtud de la reforma constitucional de 1994, goza de un
+            régimen de
+            autonomía.</p>
+          <p>La población de la ciudad, según el Censo de 2022, es de 3 120 612 habitantes.1Integra un
+            aglomerado
+            urbano mayor denominado Área Metropolitana de Buenos Aires (AMBA) junto a cuarenta
+            partidos-municipios
+            de la lindera provincia de Buenos Aires, que en total suma una población de 13 395 796
+            habitantes.
+          </p>
+        </article>
+      </section>
 
-        
-        <h2>CSS Grid Layout</h2>
-        <div class="grid">
-            <header>This is the header</header>
-            <section>
-                <aside>
-                    <ul>
-                        <li><a href="#GridSantiago">Santiago del Estero</a></li>
-                        <li><a href="#GridSeul">Seúl</a></li>
-                        <li><a href="#GridBuenosAires">Buenos Aires</a></li>
-                    </ul>
-                </aside>
-                <article>
-                    <h2 id="GridSantiago">Santiago del Estero</h2>
-                    <p>Santiago del Estero es una ciudad argentina, capital de la provincia de Santiago del Estero y
-                        cabecera
-                        del departamento Juan Francisco Borges. Es la más antigua de las ciudades existentes del país.
-                        Se
-                        encuentra ubicada a orillas del río Dulce, y se extiende en una superficie de aproximadamente
-                        4002
-                        hectáreas, oficialmente dividida en 62 barrios. Según el Censo Nacional de 2010, contaba con una
-                        población de 252 192 habitantes. Junto a la ciudad de La Banda y la localidad de El Zanjón,
-                        forma el
-                        aglomerado urbano llamado Santiago del Estero-La Banda, el centro urbano más poblado de la
-                        provincia
-                        y
-                        duodécimo en el país, con 360 923 habs.</p>
+      <footer>This is the footer.</footer>
 
-                    <h2 id="GridSeul">Seúl</h2>
-                    <p>Oficialmente Ciudad Especial de Seúl (서울특별시), es la capital de Corea del Sur desde la creación de
-                        esta república en 1948, la capital histórica de Corea desde hace más
-                        de 600 años y la ciudad más poblada de la península de Corea.</p>
-                    <p>Situada en el noroeste del país, a unos 50 kilómetros de la zona desmilitarizada que separa las
-                        dos
-                        Coreas, forma una unidad administrativa propia dentro del Estado. Está atravesada por el río
-                        Han.
-                    </p>
-                    <p>Hoy en día, Seúl es considerada una ciudad global, resultado de una explosión de crecimiento
-                        económico
-                        conocido como el Milagro del río Han, que recuperó a una ciudad destruida por la guerra de
-                        Corea. Es
-                        la
-                        cuarta economía metropolitana del mundo; con un PIB de 773.900 millones de dólares
-                        estadounidenses,
-                        solo
-                        por detrás de Tokio, Nueva York y Los Ángeles.</p>
-                    <p>Con unos 10 millones de habitantes en la ciudad propiamente dicha, y 24,5 millones en toda el
-                        área
-                        metropolitana, que incluye el puerto de Incheon y la provincia de Gyeonggi, se trata de la
-                        cuarta
-                        área
-                        metropolitana más grande del mundo.</p>
-
-                    <h2 id="GridBuenosAires">Buenos Aires</h2>
-                    <p>es la capital y ciudad más poblada de la República Argentina. Sus nombres oficiales son Ciudad de
-                        Buenos
-                        Aires o Ciudad Autónoma de Buenos Aires (CABA). También es llamada Capital Federal, por ser la
-                        sede
-                        del Gobierno nacional. Es uno de los 24 distritos, o «jurisdicciones de primer orden»,10que
-                        conforman el país. Desde 1996 es una ciudad autónoma, por lo que tiene sus propios poderes
-                        ejecutivo,
-                        legislativo y judicial. Está situada en la región centro-este del país, sobre la orilla sur del
-                        Río
-                        de
-                        la Plata, en la región pampeana. La ciudad de Buenos Aires fue cedida en 1880 por la provincia
-                        de
-                        Buenos
-                        Aires para que fuera la capital federal del país; a partir de 2020 es considerada «capital
-                        principal»,
-                        junto a 24 capitales alternas. En virtud de la reforma constitucional de 1994, goza de un
-                        régimen de
-                        autonomía.</p>
-                    <p>La población de la ciudad, según el Censo de 2022, es de 3 120 612 habitantes.1Integra un
-                        aglomerado
-                        urbano mayor denominado Área Metropolitana de Buenos Aires (AMBA) junto a cuarenta
-                        partidos-municipios
-                        de la lindera provincia de Buenos Aires, que en total suma una población de 13 395 796
-                        habitantes.
-                    </p>
-                </article>
-            </section>
-            <footer>This is the footer.</footer>
-        </div>
-
-        <footer class="mainFooter">
-            <hr>
-            <a href="https://github.com/isedaniel">github.com/isedaniel</a> - Danilo 2024.
-            <address>Santiago del Estero, Argentina.</address>
-        </footer>
     </div>
+
+    <h2>CSS Flex Layout</h2>
+    <div class="flex">
+      <header>This is the header</header>
+      <section>
+        <aside>
+          <ul>
+            <li><a href="#FlexSantiago">Santiago del Estero</a></li>
+            <li><a href="#FlexSeul">Seúl</a></li>
+            <li><a href="#FlexBuenosAires">Buenos Aires</a></li>
+          </ul>
+        </aside>
+        <article>
+          <h2 id="FlexSantiago">Santiago del Estero</h2>
+          <p>Santiago del Estero es una ciudad argentina, capital de la provincia de Santiago del Estero y
+            cabecera
+            del departamento Juan Francisco Borges. Es la más antigua de las ciudades existentes del país.
+            Se
+            encuentra ubicada a orillas del río Dulce, y se extiende en una superficie de aproximadamente
+            4002
+            hectáreas, oficialmente dividida en 62 barrios. Según el Censo Nacional de 2010, contaba con una
+            población de 252 192 habitantes. Junto a la ciudad de La Banda y la localidad de El Zanjón,
+            forma el
+            aglomerado urbano llamado Santiago del Estero-La Banda, el centro urbano más poblado de la
+            provincia
+            y
+            duodécimo en el país, con 360 923 habs.</p>
+
+          <h2 id="FlexSeul">Seúl</h2>
+          <p>Oficialmente Ciudad Especial de Seúl (서울특별시), es la capital de Corea del Sur desde la creación de
+            esta república en 1948, la capital histórica de Corea desde hace más
+            de 600 años y la ciudad más poblada de la península de Corea.</p>
+          <p>Situada en el noroeste del país, a unos 50 kilómetros de la zona desmilitarizada que separa las
+            dos
+            Coreas, forma una unidad administrativa propia dentro del Estado. Está atravesada por el río
+            Han.
+          </p>
+          <p>Hoy en día, Seúl es considerada una ciudad global, resultado de una explosión de crecimiento
+            económico
+            conocido como el Milagro del río Han, que recuperó a una ciudad destruida por la guerra de
+            Corea. Es
+            la
+            cuarta economía metropolitana del mundo; con un PIB de 773.900 millones de dólares
+            estadounidenses,
+            solo
+            por detrás de Tokio, Nueva York y Los Ángeles.</p>
+          <p>Con unos 10 millones de habitantes en la ciudad propiamente dicha, y 24,5 millones en toda el
+            área
+            metropolitana, que incluye el puerto de Incheon y la provincia de Gyeonggi, se trata de la
+            cuarta
+            área
+            metropolitana más grande del mundo.</p>
+
+          <h2 id="FlexBuenosAires">Buenos Aires</h2>
+          <p>es la capital y ciudad más poblada de la República Argentina. Sus nombres oficiales son Ciudad de
+            Buenos
+            Aires o Ciudad Autónoma de Buenos Aires (CABA). También es llamada Capital Federal, por ser la
+            sede
+            del Gobierno nacional. Es uno de los 24 distritos, o «jurisdicciones de primer orden»,10que
+            conforman el país. Desde 1996 es una ciudad autónoma, por lo que tiene sus propios poderes
+            ejecutivo,
+            legislativo y judicial. Está situada en la región centro-este del país, sobre la orilla sur del
+            Río
+            de
+            la Plata, en la región pampeana. La ciudad de Buenos Aires fue cedida en 1880 por la provincia
+            de
+            Buenos
+            Aires para que fuera la capital federal del país; a partir de 2020 es considerada «capital
+            principal»,
+            junto a 24 capitales alternas. En virtud de la reforma constitucional de 1994, goza de un
+            régimen de
+            autonomía.</p>
+          <p>La población de la ciudad, según el Censo de 2022, es de 3 120 612 habitantes.1Integra un
+            aglomerado
+            urbano mayor denominado Área Metropolitana de Buenos Aires (AMBA) junto a cuarenta
+            partidos-municipios
+            de la lindera provincia de Buenos Aires, que en total suma una población de 13 395 796
+            habitantes.
+          </p>
+        </article>
+      </section>
+      <footer>This is the footer.</footer>
+    </div>
+
+
+    <h2>CSS Grid Layout</h2>
+    <div class="grid">
+      <header>This is the header</header>
+      <section>
+        <aside>
+          <ul>
+            <li><a href="#GridSantiago">Santiago del Estero</a></li>
+            <li><a href="#GridSeul">Seúl</a></li>
+            <li><a href="#GridBuenosAires">Buenos Aires</a></li>
+          </ul>
+        </aside>
+        <article>
+          <h2 id="GridSantiago">Santiago del Estero</h2>
+          <p>Santiago del Estero es una ciudad argentina, capital de la provincia de Santiago del Estero y
+            cabecera
+            del departamento Juan Francisco Borges. Es la más antigua de las ciudades existentes del país.
+            Se
+            encuentra ubicada a orillas del río Dulce, y se extiende en una superficie de aproximadamente
+            4002
+            hectáreas, oficialmente dividida en 62 barrios. Según el Censo Nacional de 2010, contaba con una
+            población de 252 192 habitantes. Junto a la ciudad de La Banda y la localidad de El Zanjón,
+            forma el
+            aglomerado urbano llamado Santiago del Estero-La Banda, el centro urbano más poblado de la
+            provincia
+            y
+            duodécimo en el país, con 360 923 habs.</p>
+
+          <h2 id="GridSeul">Seúl</h2>
+          <p>Oficialmente Ciudad Especial de Seúl (서울특별시), es la capital de Corea del Sur desde la creación de
+            esta república en 1948, la capital histórica de Corea desde hace más
+            de 600 años y la ciudad más poblada de la península de Corea.</p>
+          <p>Situada en el noroeste del país, a unos 50 kilómetros de la zona desmilitarizada que separa las
+            dos
+            Coreas, forma una unidad administrativa propia dentro del Estado. Está atravesada por el río
+            Han.
+          </p>
+          <p>Hoy en día, Seúl es considerada una ciudad global, resultado de una explosión de crecimiento
+            económico
+            conocido como el Milagro del río Han, que recuperó a una ciudad destruida por la guerra de
+            Corea. Es
+            la
+            cuarta economía metropolitana del mundo; con un PIB de 773.900 millones de dólares
+            estadounidenses,
+            solo
+            por detrás de Tokio, Nueva York y Los Ángeles.</p>
+          <p>Con unos 10 millones de habitantes en la ciudad propiamente dicha, y 24,5 millones en toda el
+            área
+            metropolitana, que incluye el puerto de Incheon y la provincia de Gyeonggi, se trata de la
+            cuarta
+            área
+            metropolitana más grande del mundo.</p>
+
+          <h2 id="GridBuenosAires">Buenos Aires</h2>
+          <p>es la capital y ciudad más poblada de la República Argentina. Sus nombres oficiales son Ciudad de
+            Buenos
+            Aires o Ciudad Autónoma de Buenos Aires (CABA). También es llamada Capital Federal, por ser la
+            sede
+            del Gobierno nacional. Es uno de los 24 distritos, o «jurisdicciones de primer orden»,10que
+            conforman el país. Desde 1996 es una ciudad autónoma, por lo que tiene sus propios poderes
+            ejecutivo,
+            legislativo y judicial. Está situada en la región centro-este del país, sobre la orilla sur del
+            Río
+            de
+            la Plata, en la región pampeana. La ciudad de Buenos Aires fue cedida en 1880 por la provincia
+            de
+            Buenos
+            Aires para que fuera la capital federal del país; a partir de 2020 es considerada «capital
+            principal»,
+            junto a 24 capitales alternas. En virtud de la reforma constitucional de 1994, goza de un
+            régimen de
+            autonomía.</p>
+          <p>La población de la ciudad, según el Censo de 2022, es de 3 120 612 habitantes.1Integra un
+            aglomerado
+            urbano mayor denominado Área Metropolitana de Buenos Aires (AMBA) junto a cuarenta
+            partidos-municipios
+            de la lindera provincia de Buenos Aires, que en total suma una población de 13 395 796
+            habitantes.
+          </p>
+        </article>
+      </section>
+      <footer>This is the footer.</footer>
+    </div>
+
+    <footer class="mainFooter">
+      <hr>
+      <a href="https://github.com/isedaniel">github.com/isedaniel</a> - Danilo 2024.
+      <address>Santiago del Estero, Argentina.</address>
+      Now accepting &#8361;.
+    </footer>
+  </div>
 </body>
 
 </html>

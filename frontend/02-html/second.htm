@@ -2,78 +2,81 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <title>Second page.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <title>Second page.</title>
 </head>
 
 <body>
-    <div class="content">
-        <nav class="mainNav">
-            <h1>W3Schools HTML Course</h1>
-            <ul>
-                <li><a class="button" href="/index.html">Home</a></li>
-                <li><a class="button" href="/second.htm">Second page</a></li>
-                <li><a class="button" href="/layouts.htm">CSS Layouts</a></li>
-            </ul>
-        </nav>
-        <h2>HTML Course second page.</h2>
+  <div class="content">
+    
+    <nav>
+      <h1>W3Schools HTML Course</h1>
+      <ul>
+        <li><a class="button" href="/">Home</a></li>
+        <li><a class="button" href="/second.htm">Second page</a></li>
+        <li><a class="button" href="/layouts.htm">CSS Layouts</a></li>
+        <li><a class="button" href="/forms.html">Forms</a></li>
+      </ul>
+    </nav>
 
-        <p>For more practice.</p>
+    <h2>HTML Course second page.</h2>
 
-        <h2>Javascript</h2>
+    <p>For more practice.</p>
 
-        Button with Javascript.
+    <h2>Javascript</h2>
 
-        <div class="button" id="getDate">Get Date()</div>
+    Button with Javascript.
 
-        <p id="display"></p>
+    <div class="button" id="getDate">Get Date()</div>
 
-        <h2>Hello Javascript</h2>
+    <p id="display"></p>
 
-        <div class="button" id="helloJavascript">Hello Javascript</div>
+    <h2>Hello Javascript</h2>
 
-        <p id="display2"></p>
+    <div class="button" id="helloJavascript">Hello Javascript</div>
 
-        <h2>Random color button</h2>
+    <p id="display2"></p>
 
-        <div class="button" id="randomColor">Return random color!</div>
-        <p id="colorCode"></p>
-    </div>
+    <h2>Random color button</h2>
+
+    <div class="button" id="randomColor">Return random color!</div>
+    <p id="colorCode"></p>
+  </div>
 </body>
 <script>
-    const $ = (id) => document.getElementById(id);
+  const $ = (id) => document.getElementById(id);
 
-    $('getDate').addEventListener('click', () => {
-        $('display').innerHTML = Date();
-    });
+  $('getDate').addEventListener('click', () => {
+    $('display').innerHTML = Date();
+  });
 
-    $('helloJavascript').addEventListener('click', () => {
-        $('display2').innerHTML = 'Hello Javascript!';
-    });
+  $('helloJavascript').addEventListener('click', () => {
+    $('display2').innerHTML = 'Hello Javascript!';
+  });
 
-    const getRandomInt = (max) => {
-        return Math.floor(Math.random() * max);
-    }
+  const getRandomInt = (max) => {
+    return Math.floor(Math.random() * max);
+  }
 
-    const randomColorButton = $('randomColor');
-    const colorCodeDisplay = $('colorCode');
+  const randomColorButton = $('randomColor');
+  const colorCodeDisplay = $('colorCode');
 
-    randomColorButton.addEventListener('click', () => {
-        const red = getRandomInt(256);
-        const green = getRandomInt(256);
-        const blue = getRandomInt(256);
-        const newColor = `rgb(${red}, ${green}, ${blue})`;
+  randomColorButton.addEventListener('click', () => {
+    const red = getRandomInt(256);
+    const green = getRandomInt(256);
+    const blue = getRandomInt(256);
+    const newColor = `rgb(${red}, ${green}, ${blue})`;
 
-        const brightness = red * 0.299 + green * 0.587 + blue * 0.114;
-        const textColor = brightness > 110 ? '#111' : '#ddd';
+    const brightness = red * 0.299 + green * 0.587 + blue * 0.114;
+    const textColor = brightness > 110 ? '#111' : '#ddd';
 
-        randomColorButton.style.backgroundColor = newColor;
-        randomColorButton.style.color = textColor;
-        colorCodeDisplay.innerHTML = `color: ${newColor};`;
-    });
+    randomColorButton.style.backgroundColor = newColor;
+    randomColorButton.style.color = textColor;
+    colorCodeDisplay.innerHTML = `color: ${newColor};`;
+  });
 </script>
 
 </html>

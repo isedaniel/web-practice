@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <title>Forms</title>
+</head>
+
+<body>
+
+  <div class="content">
+
+    <nav>
+      <h1>W3Schools HTML Course</h1>
+      <ul>
+        <li><a class="button" href="/">Home</a></li>
+        <li><a class="button" href="/second.htm">Second page</a></li>
+        <li><a class="button" href="/layouts.htm">CSS Layouts</a></li>
+        <li><a class="button" href="/forms.html">Forms</a></li>
+      </ul>
+    </nav>
+
+    <section>
+
+      <h1>HTML Forms</h1>
+
+      <form style="border: 1px solid #eee; padding: 10px;">
+        <label for="firstname">First name:</label> <br>
+        <input type="text" name="fname" id="fname"> <br>
+
+        <label for="lastname">Last name:</label> <br>
+        <input type="text" name="lastname" id="lastname"> <br>
+
+        <input type="submit" value="Submit">
+      </form>
+
+      <h2>The &lt;label&gt; element</h2>
+
+      <p>
+        <span class="code">&lt;label&gt;</span> is useful for screen-reader
+        users. It also helps pointing <em>radio buttons</em>, you can click
+        the <span class="code">&lt;label&gt;</span> element to toggle it:
+      </p>
+
+      <form action="#">
+        <label for="radio1">Radio 1</label><input type="radio" name="radios" id="radio1"> <br>
+        <label for="radio2">Radio 2</label><input type="radio" name="radios" id="radio2"> <br>
+      </form>
+
+      <p>
+        The <span class="code">for</span> attribute of <span class="code">&lt;label&gt;</span>
+        should be equal to <span class="code">id</span> atrribute of 
+        <span class="code">&lt;input&gt;</span>.
+      </p>
+
+    </section>
+
+  </div>
+
+</body>
+
+</html>
