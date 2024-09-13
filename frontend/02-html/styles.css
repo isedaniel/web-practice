@@ -70,13 +70,14 @@ tr:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  width: 125px;
+  width: 130px;
   height: 50px;
   margin: auto;
   background-color: hsl(128, 50%, 30%);
   border-radius: 5px;
   color: #ddd;
   user-select: none;
+  
 }
 
 .button:hover {

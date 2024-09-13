@@ -52,14 +52,57 @@
 
       <p>
         The <span class="code">for</span> attribute of <span class="code">&lt;label&gt;</span>
-        should be equal to <span class="code">id</span> atrribute of 
+        should be equal to <span class="code">id</span> atrribute of
         <span class="code">&lt;input&gt;</span>.
       </p>
+
+      <h2>The method attribute</h2>
+
+      <p>
+        The <span class="code">&lt;form&gt;</span> tag admits an
+        <span class="code">method</span> attribute.
+        The method can be <span class="code">"get"</span> or
+        <span class="code">"post"</span>.
+      </p>
+
+      <h3>Notes on <span class="code">get</span></h3>
+
+      <p>
+      <ul>
+        <li>Appends form data to the URL</li>
+        <li>NEVER use GET for sensistive data</li>
+        <li>URL limited to 2048 characters</li>
+        <li>Useful for bookmark results</li>
+        <li>Good for non-secure-data</li>
+      </ul>
+      </p>
+
+      <form action="#" method="get" style="border: 1px solid #cd2e3a; padding: 10px;">
+        ❌ <br>
+        <label for="user">Email:</label><br>
+        <input type="email" name="email" id="user"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password"> <br>
+        <input type="submit" value="Submit">
+      </form>
+      <br>
+      <form action="#" method="post" style="border: 1px solid seagreen; padding: 10px;">
+        ✅ <br>
+        <label for="user">Email:</label><br>
+        <input type="email" name="email" id="user"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password"> <br>
+        <input type="submit" value="Submit">
+      </form>
 
     </section>
 
   </div>
-
+  <footer class="mainFooter">
+    <hr>
+    <a href="https://github.com/isedaniel">github.com/isedaniel</a> - Danilo 2024.
+    <address>Santiago del Estero, Argentina.</address>
+  </footer>
 </body>
 
 </html>
