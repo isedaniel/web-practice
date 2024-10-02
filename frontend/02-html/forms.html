@@ -23,78 +23,17 @@
       </ul>
     </nav>
 
-    <section>
+    <section class="frame">
+      <label for="key">Key</label> <br>
+      <input type="text" id="key" name="key"> <br>
+      <label for="value">Value</label> <br>
+      <input type="text" name="value" id="value"> <br>
+      <input type="button" value="Save" id="save-button">
+      <input type="button" value="Clear" id="clear-button">
+    </section>
 
-      <h1>HTML Forms</h1>
-
-      <form style="border: 1px solid #eee; padding: 10px;">
-        <label for="firstname">First name:</label> <br>
-        <input type="text" name="fname" id="fname"> <br>
-
-        <label for="lastname">Last name:</label> <br>
-        <input type="text" name="lastname" id="lastname"> <br>
-
-        <input type="submit" value="Submit">
-      </form>
-
-      <h2>The &lt;label&gt; element</h2>
-
-      <p>
-        <span class="code">&lt;label&gt;</span> is useful for screen-reader
-        users. It also helps pointing <em>radio buttons</em>, you can click
-        the <span class="code">&lt;label&gt;</span> element to toggle it:
-      </p>
-
-      <form action="#">
-        <label for="radio1">Radio 1</label><input type="radio" name="radios" id="radio1"> <br>
-        <label for="radio2">Radio 2</label><input type="radio" name="radios" id="radio2"> <br>
-      </form>
-
-      <p>
-        The <span class="code">for</span> attribute of <span class="code">&lt;label&gt;</span>
-        should be equal to <span class="code">id</span> atrribute of
-        <span class="code">&lt;input&gt;</span>.
-      </p>
-
-      <h2>The method attribute</h2>
-
-      <p>
-        The <span class="code">&lt;form&gt;</span> tag admits an
-        <span class="code">method</span> attribute.
-        The method can be <span class="code">"get"</span> or
-        <span class="code">"post"</span>.
-      </p>
-
-      <h3>Notes on <span class="code">get</span></h3>
-
-      <p>
-      <ul>
-        <li>Appends form data to the URL</li>
-        <li>NEVER use GET for sensistive data</li>
-        <li>URL limited to 2048 characters</li>
-        <li>Useful for bookmark results</li>
-        <li>Good for non-secure-data</li>
-      </ul>
-      </p>
-
-      <form action="#" method="get" style="border: 1px solid #cd2e3a; padding: 10px;">
-        ❌ <br>
-        <label for="user">Email:</label><br>
-        <input type="email" name="email" id="user"><br>
-        <label for="password">Password:</label><br>
-        <input type="password" name="password" id="password"> <br>
-        <input type="submit" value="Submit">
-      </form>
-      <br>
-      <form action="#" method="post" style="border: 1px solid seagreen; padding: 10px;">
-        ✅ <br>
-        <label for="user">Email:</label><br>
-        <input type="email" name="email" id="user"><br>
-        <label for="password">Password:</label><br>
-        <input type="password" name="password" id="password"> <br>
-        <input type="submit" value="Submit">
-      </form>
-
+    <section class="frame">
+      <p id="storage"></p>
     </section>
 
   </div>
@@ -104,5 +43,26 @@
     <address>Santiago del Estero, Argentina.</address>
   </footer>
 </body>
+
+<script>
+  const $ = (el) => document.getElementById(el);
+
+  
+  const storage = $('storage');
+  const updateStorage = () => storage.innerHTML = JSON.stringify(localStorage);
+
+  const keyInput = $('key');
+  const valueInput = $('value');
+  const saveButton = $('save-button');
+  saveButton.addEventListener('click', () => {
+    localStorage.setItem(keyInput.value, valueInput.value);
+    updateStorage();
+  });
+
+  $('clear-button').addEventListener('click', () => {
+    localStorage.clear();
+    updateStorage();
+  });
+</script>
 
 </html>
