@@ -1,0 +1,16 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+[data-type="primary"] {
+    border: 30px solid pink;
+}
+
+[data-type="primary"]::before {
+    content: 'Prefix - ';
+}
+
+[data-type="primary"]::after {
+    content: ' - Postfix';
+}
