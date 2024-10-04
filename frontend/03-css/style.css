@@ -3,14 +3,11 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-[data-type="primary"] {
-    border: 30px solid pink;
+p ~ p {
+    color: red;
 }
 
-[data-type="primary"]::before {
-    content: 'Prefix - ';
-}
-
-[data-type="primary"]::after {
-    content: ' - Postfix';
+::selection {
+    background: black;
+    color: white;
 }
